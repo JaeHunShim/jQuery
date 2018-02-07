@@ -6,6 +6,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script src = js/jquery-3.3.1.min.js></script>
 <title>Insert title here</title>
+<style>
+	.high-light-0{
+		background-color:yellow;
+	}
+	.high-light-1{
+		background-color:red;
+	}
+	.high-light-2{
+		background-color:orange;
+	}
+	.high-light-3{
+		background-color:green;
+	}
+	.high-light-4{
+		background-color:blue;
+	}
+</style>
 <script>
 	<!-- 3.4 필터 선택자 -->
 	/* : 기호를 포함하는 선택자를 필터 선택자라고 하는데 type속성에 따라서 문서 객체를 선택할수 있다. */
@@ -44,12 +61,50 @@
 			 output ='';
 			//문자열 만들기
 			output += '<a href = "'+ item.link +'">';
-			output += '<h1>' +item.name+'</h>'
+			output += '<h1>' +item.name+'</h1>'
 			output += '</a>'
 			
 			//집어넣기
 			document.body.innerHTML += output;
 		});
+	});
+	/* 5. JQuery 배열관리 */
+	$(document).ready(function(){
+		
+		$('h1').each(function(index,item){
+			$(this).addClass('high-light-'+index);
+		});
+	});
+	/* 6. 객체 확장($.(extend()) */
+	/* 자바스크립트에서는 이런식으로 빈 객체를 생성하고 이후에  새속성을 이런식으로 추가했다.*/
+	$(document).ready(function(){
+		var object ={}
+		object.name = 'jaehun';
+		object.gender = 'man';
+		object.address ='서울시 ';
+		object.age =36;
+		
+		var output ='';
+		
+		$.each(object,function(key,value){
+			output += key +":"+value+"\n";
+		});
+		alert(output)
+	});
+	/* $.extend()를 사용하면 extend의 두번째 매개변수에 입력한 객체의 속성이 object 객체에 합쳐진 것을 볼수 있음.  */
+
+	$(document).ready(function(){
+		var object ={name : 'jaehun'};
+		
+		$.extend(object,{
+			gender :'men',
+			address:'서울시',
+			age :36
+		});
+		$.each(object,function(key,value){
+			output += key +":"+value+"\n";
+		});
+		alert(output);
 	});
 </script>
 </head>
@@ -105,5 +160,11 @@
 			<td>서울시 송파구6</td>
 		</tr>
 	</table>
+	
+	<h1>item -0</h1>
+	<h1>item -1</h1>
+	<h1>item -2</h1>
+	<h1>item -3</h1>
+	<h1>item -4</h1>
 </body>
 </html>
