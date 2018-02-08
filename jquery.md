@@ -167,43 +167,43 @@ JQuery
       		$('tr:even').css('background-color','blue');
       		$('tr:first').css('background-color','green');
       	});
-        <table>
-      		<tr>
-      			<th>이름</th>
-      			<th>혈액형</th>
-      			<th>지역</th>
-      		</tr>
-      		<tr>
-      			<td>강민수</td>
-      			<td>에이비형</td>
-      			<td>서울시 송파구1</td>
-      		</tr>
-      		<tr>
-      			<td>강민수1</td>
-      			<td>오형</td>
-      			<td>서울시 송파구2</td>
-      		</tr>
-      		<tr>
-      			<td>강민수2</td>
-      			<td>에이형</td>
-      			<td>서울시 송파구3</td>
-      		</tr>
-      		<tr>
-      			<td>강민수3</td>
-      			<td>비형</td>
-      			<td>서울시 송파구4</td>
-      		</tr>
-      		<tr>
-      			<td>강민수4</td>
-      			<td>에이비형</td>
-      			<td>서울시 송파구5</td>
-      		</tr>
-      		<tr>
-      			<td>강민수5</td>
-      			<td>에이비형</td>
-      			<td>서울시 송파구6</td>
-      		</tr>
-      	</table>
+          <table>
+          <tr>
+           <th>이름</th>
+           <th>혈액형</th>
+           <th>지역</th>
+          </tr>
+          <tr>
+           <td>강민수</td>
+           <td>에이비형</td>
+           <td>서울시 송파구1</td>
+          </tr>
+          <tr>
+           <td>강민수1</td>
+           <td>오형</td>
+           <td>서울시 송파구2</td>
+          </tr>
+          <tr>
+           <td>강민수2</td>
+           <td>에이형</td>
+           <td>서울시 송파구3</td>
+          </tr>
+          <tr>
+           <td>강민수3</td>
+           <td>비형</td>
+           <td>서울시 송파구4</td>
+          </tr>
+          <tr>
+           <td>강민수4</td>
+           <td>에이비형</td>
+           <td>서울시 송파구5</td>
+          </tr>
+          <tr>
+           <td>강민수5</td>
+           <td>에이비형</td>
+           <td>서울시 송파구6</td>
+          </tr>
+         </table>
       테이블에서 해당 위치에 해당하는 부분의 style을 바꿀수도 있다.
 
   * #### 배열관리: JQuery로 배열을 관리 할대는 each() 메소드를 사용한다. each()메서드는 매개변수로 입력한 함수로 for in 반복문처럼 객체나 배열의 요소를 검사하는 메서드이다.
@@ -579,43 +579,43 @@ JQuery
     * 가장 많이 사용하는 것은 appendTo()와 append()메소드를 가장 많이 사용한다.
     * prepend와 After 의 설명을 비교해보면 무엇이 다른지 모른다. prepend가 붙은 것은 바로 뒤에 추가하는 것이고 after,before의 경우는 바로뒤가 아닌 무조건 그냥 뒤나 앞에 붙는단 소리다. 즉 바로 뒤나앞이 아니라는 의미.
 
-      <table>
-        <tr>
-          <th align="center">메서드 이름</th>
-          <th align ="center">설명</th>
-            </tr>
-            <tr>
-              <td>$(A).appendTo(B)</td>
-              <td>A를 B의 뒷부분에 추가한다. </td>
-            </tr>
-            <tr>
-              <td>$(A).prependTo(B)</td>
-              <td>A를 B의 앞부분에 추가한다 </td>
-            </tr>
-            <tr>
-              <td>$(A).insertAfter(B)</td>
-              <td>A를 B뒤에 추가한다. </td>
-            </tr>
-            <tr>
-              <td>$(A).insertBefore(B)</td>
-              <td>A를 B의 앞에 추가한다. </td>
-            </tr>
-            <tr>
-              <td>$(A).before(B)</td>
-              <td>B를 A의 앞에 추가한다. </td>
-            </tr>
-            <tr>
-              <td>$(A).after(B)</td>
-              <td>B를 A의 뒷부분에 추가한다. </td>
-            </tr>
-            <tr>
-              <td>$(A).prepend(B)</td>
-              <td> B를 A의 앞부분에 추가한다</td>
-            </tr>
-            <tr>
-              <td>$(A).append(B)</td>
-              <td>B를 A의 뒷부분에 추가한다 </td>
-            </tr>
+        <table>
+          <tr>
+            <th align="center">메서드 이름</th>
+            <th align ="center">설명</th>
+              </tr>
+              <tr>
+                <td>$(A).appendTo(B)</td>
+                <td>A를 B의 뒷부분에 추가한다. </td>
+              </tr>
+              <tr>
+                <td>$(A).prependTo(B)</td>
+                <td>A를 B의 앞부분에 추가한다 </td>
+              </tr>
+              <tr>
+                <td>$(A).insertAfter(B)</td>
+                <td>A를 B뒤에 추가한다. </td>
+              </tr>
+              <tr>
+                <td>$(A).insertBefore(B)</td>
+                <td>A를 B의 앞에 추가한다. </td>
+              </tr>
+              <tr>
+                <td>$(A).before(B)</td>
+                <td>B를 A의 앞에 추가한다. </td>
+              </tr>
+              <tr>
+                <td>$(A).after(B)</td>
+                <td>B를 A의 뒷부분에 추가한다. </td>
+              </tr>
+              <tr>
+                <td>$(A).prepend(B)</td>
+                <td> B를 A의 앞부분에 추가한다</td>
+              </tr>
+              <tr>
+                <td>$(A).append(B)</td>
+                <td>B를 A의 뒷부분에 추가한다 </td>
+              </tr>
     * 예제
 
           $(document).ready(function(){
