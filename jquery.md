@@ -578,74 +578,76 @@ JQuery
   * #### 문서 객체에 문서객체를 삽입
     * 가장 많이 사용하는 것은 appendTo()와 append()메소드를 가장 많이 사용한다.
     * prepend와 After 의 설명을 비교해보면 무엇이 다른지 모른다. prepend가 붙은 것은 바로 뒤에 추가하는 것이고 after,before의 경우는 바로뒤가 아닌 무조건 그냥 뒤나 앞에 붙는단 소리다. 즉 바로 뒤나앞이 아니라는 의미.
+
       <table>
         <tr>
           <th align="center">메서드 이름</th>
           <th align ="center">설명</th>
-        </tr>
-        <tr>
-          <td>$(A).appendTo(B)</td>
-          <td>A를 B의 뒷부분에 추가한다. </td>
-        </tr>
-        <tr>
-          <td>$(A).prependTo(B)</td>
-          <td>A를 B의 앞부분에 추가한다 </td>
-        </tr>
-        <tr>
-          <td>$(A).insertAfter(B)</td>
-          <td>A를 B뒤에 추가한다. </td>
-        </tr>
-        <tr>
-          <td>$(A).insertBefore(B)</td>
-          <td>A를 B의 앞에 추가한다. </td>
-        </tr>
-        <tr>
-          <td>$(A).before(B)</td>
-          <td>B를 A의 앞에 추가한다. </td>
-        </tr>
-        <tr>
-          <td>$(A).after(B)</td>
-          <td>B를 A의 뒷부분에 추가한다. </td>
-        </tr>
-        <tr>
-          <td>$(A).prepend(B)</td>
-          <td> B를 A의 앞부분에 추가한다</td>
-        </tr>
-        <tr>
-          <td>$(A).append(B)</td>
-          <td>B를 A의 뒷부분에 추가한다 </td>
-        </tr>
+            </tr>
+            <tr>
+              <td>$(A).appendTo(B)</td>
+              <td>A를 B의 뒷부분에 추가한다. </td>
+            </tr>
+            <tr>
+              <td>$(A).prependTo(B)</td>
+              <td>A를 B의 앞부분에 추가한다 </td>
+            </tr>
+            <tr>
+              <td>$(A).insertAfter(B)</td>
+              <td>A를 B뒤에 추가한다. </td>
+            </tr>
+            <tr>
+              <td>$(A).insertBefore(B)</td>
+              <td>A를 B의 앞에 추가한다. </td>
+            </tr>
+            <tr>
+              <td>$(A).before(B)</td>
+              <td>B를 A의 앞에 추가한다. </td>
+            </tr>
+            <tr>
+              <td>$(A).after(B)</td>
+              <td>B를 A의 뒷부분에 추가한다. </td>
+            </tr>
+            <tr>
+              <td>$(A).prepend(B)</td>
+              <td> B를 A의 앞부분에 추가한다</td>
+            </tr>
+            <tr>
+              <td>$(A).append(B)</td>
+              <td>B를 A의 뒷부분에 추가한다 </td>
+            </tr>
+    * 예제
 
           $(document).ready(function(){
-        		$('<h1><h1>').text('Hello World..!!').appendTo('body');
-        		$('<h1>Hello World</h1>').appendTo('body');
-        		$('<img src = "img/daoinsertLog.png"/>').appendTo('body');
-        	});	 
-        	/* 문서객체에 문서객체를 삽입  */
-        	/* 첫번재 방식 */
-        	 $(document).ready(function(){
-        		var h1 = '<h1> ABCDEFG</h1>';
-        		var h2 = '<h2> ABCDEFG</h2>';
+            $('<h1><h1>').text('Hello World..!!').appendTo('body');
+            $('<h1>Hello World</h1>').appendTo('body');
+            $('<img src = "img/daoinsertLog.png"/>').appendTo('body');
+          });	 
+          /* 문서객체에 문서객체를 삽입  */
+          /* 첫번재 방식 */
+          $(document).ready(function(){
+            var h1 = '<h1> ABCDEFG</h1>';
+            var h2 = '<h2> ABCDEFG</h2>';
 
-        		$('body').append(h1,h2,h1,h2);
-        	});
-        	/* 두번째 방식 */
-        	 $(document).ready(function(){
-        		var content =[
-        			{name:'재훈',address:'수원시 영통구'},
-        			{name:'재훈1',address:'수원시 영통구1'},
-        			{name:'재훈2',address:'수원시 영통구2'}
-        		];
+            $('body').append(h1,h2,h1,h2);
+          });
+          /* 두번째 방식 */
+          $(document).ready(function(){
+            var content =[
+              {name:'재훈',address:'수원시 영통구'},
+              {name:'재훈1',address:'수원시 영통구1'},
+              {name:'재훈2',address:'수원시 영통구2'}
+            ];
 
-        		$('div').append(function(index){
-        			var item = content[index];
-        			var output ='';
-        			output += '<h1>' + item.name +'</h1>';
-        			output += '<h2>' + item.address +'</h2>'
+            $('div').append(function(index){
+              var item = content[index];
+              var output ='';
+              output += '<h1>' + item.name +'</h1>';
+              output += '<h2>' + item.address +'</h2>'
 
-        			return output;
-        		});
-        	});
+              return output;
+            });
+          });
   * #### 문서 객체의 이동
     * 문서 객체를 선택하고 문서객체 삽입 메서드를 이용하면 문서객체를 쉽게 다른곳으로 이동시킬수가 있다.
 
@@ -661,5 +663,5 @@ JQuery
     * 문서객체의 삽입메서드를 h1태그의 태그와 속성과 텍스트를 추가하고 div 밑에 추가하고 clone()을 이용해서 복사한다.
 
           $(document).ready(function(){
-        		$('div').append($('h1').clone());
-        	});
+          $('div').append($('h1').clone());
+          });

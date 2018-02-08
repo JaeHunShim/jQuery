@@ -104,7 +104,7 @@
 	});
 	/* 문서객체 생성 */
 	/* $()로 문서를 객체를 생성.text()이나 html()로 문서객체 내부에 추가하고,appendTo로 어디 안에 넣을지 지정 */
-	 $(document).ready(function(){
+	$(document).ready(function(){
 		$('<h1><h1>').text('Hello World..!!').appendTo('body');
 		$('<h1>Hello World</h1>').appendTo('body');
 		$('<img src = "img/daoinsertLog.png"/>').appendTo('body');
@@ -118,7 +118,7 @@
 		$('body').append(h1,h2,h1,h2);
 	}); 
 	/* 두번째 방식 */
-	/* $(document).ready(function(){
+	 $(document).ready(function(){
 		var content =[
 			{name:'재훈',address:'수원시 영통구'},
 			{name:'재훈1',address:'수원시 영통구1'},
@@ -133,21 +133,21 @@
 			
 			return output;
 		});
-	}); */
+	}); 
 	/* 문서객체 이동 */
-	/* $(document).ready(function(){
+	$(document).ready(function(){
 		$('img').css('width',250);
 		
 		var Interval=setInterval(function(){
 			$('img').first().appendTo('body');
 		},2000);
 		clearInterval(Interval);
-	}); */
+	}); 
 	/* 문서객체 복사 (clone)*/
-	/* $(document).ready(function(){
+	$(document).ready(function(){
 		$('div').append($('h1').clone());
 	});
-	 */
+	 
 	
 </script>
 </head>
