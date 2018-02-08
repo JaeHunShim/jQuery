@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <script src = js/jquery-3.3.1.min.js></script>
 <style>
-/* 	.first{
+ 	.first{
 		color:red;
 	}
 	.second{
@@ -14,71 +14,71 @@
 	}
 	.third{
 		color:yellow;
-	} */
+	} 
 </style>
 <title>Insert title here</title>
 <script>
 	<!--1.문서 객체의 클래스 속성 추가(addClass()) -->
-	/* $(document).ready(function(){
+	 $(document).ready(function(){
 		$('h1').addClass(function(index){
 			return 'class'+index;
 		});
-	}); */
+	}); 
 	/* 2.문서 객체의 클래스 속성 제거(removeClass()) */
-	/* $(document).ready(function(){
+	 $(document).ready(function(){
 		$('h2').removeClass('a');
-	}); */
+	}); 
 	/* 3.속성과 관련된 모든 기능을 수행한다.문서객체의 속성검사(attr()) */
-	/* $(document).ready(function(){
+	 $(document).ready(function(){
 		var img = $('img').attr('src');
 		
 		alert(img);
-	}); */
+	}); 
 	/* 4.문서 객체에 속성추가 */
-/* 	$(document).ready(function(){ */
+ 	$(document).ready(function(){ 
 		/* 첫번째 방법 */
-		/* $('img').attr('width','250'); */
+		 $('img').attr('width','250'); 
 		/* 두번째 방법 */
-		/* $('img').attr('width',function(index){
+		 $('img').attr('width',function(index){
 			return (index+1)*100;
-		}); */
+		}); 
 		/* 세번째 방법 */
-		/* $('img').attr({
+		 $('img').attr({
 			width:function(index){
 				return (index+1)*100
 			},
 			height:100
 		});
-	}); */
+	}); 
 	/* 문서 객체의 속성 제거 (removeAttr(name)) */
 	/* removeClass()를 사용해서 제거해봤는데 다른점은 removeAttr()을 사용하면 클래스 속성자체가 모두 삭제가 된다.removeClass()는 여러개의 클래스 속성중 선택적으로 
 		제거할수 있다.*/
-	/* $(document).ready(function(){
+	 $(document).ready(function(){
 		$('h2').removeAttr('class');
-	}); */
+	}); 
 	/* 스타일 검사 (css():스타일과 관련된 모든 기능을 수행한다.) */
-	/* $(document).ready(function(){
+	 $(document).ready(function(){
 		var color = $('h1').css('color');
 		alert(color);
-	}); */
+	}); 
 	/* 문서객체에 스타일 추가 */
-	/* $(document).ready(function(){ */
+	 $(document).ready(function(){ 
 		/* 첫번째 방법 */
-		/* $('h1').css('color','red'); */
+		 $('h1').css('color','red'); 
 		/* 두번째 방법 */
-		/* var color = ['red','green','blue'];
+		 var color = ['red','green','blue'];
 		$('h1').css('color',function(index){
 			return color[index];
-		}); */
+		}); 
 		/* 세번째 방법 */
-		/* var color = ['orange','yellow','purple','green'];
+		 var color = ['orange','yellow','purple','green'];
 		$('h3').css({
 			color:function(index){
 				return color[index];
 			},
 			backgroundColor:'black'
 		});
-	}); */
+	}); 
 	/* 문서객체의 내부추가  
 		html(): 문서 객체 내부의 글자와 관련딘 모든 기능을 수행 (HTML 태그 인식), 첫번째 문서 객체의 글자를 가져온다
 		text(): 문서 객체 내부의 글자와 관련된 모든 기능을 수행 , 선택자로 선택한 모든 문서 객체의 글자를 모두가져온다.
