@@ -583,11 +583,11 @@ JQuery
     * prepend와 After 의 설명을 비교해보면 무엇이 다른지 모른다. prepend가 붙은 것은 바로 뒤에 추가하는 것이고 after,before의 경우는 바로뒤가 아닌 무조건 그냥 뒤나 앞에 붙는단 소리다. 즉 바로 뒤나앞이 아니라는 의미.
       <div>
       <table>
-      <tr>
-      <th align="center">메서드 이름</th>
-      <th align ="center">설명</th>
-      </tr>
-      <tr>
+        <tr>
+          <th align="center">메서드 이름</th>
+          <th align ="center">설명</th>
+          </tr>
+        <tr>
       <td>$(A).appendTo(B)</td>
       <td>A를 B의 뒷부분에 추가한다. </td>
       </tr>
