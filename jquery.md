@@ -758,6 +758,8 @@ JQuery
                 $(this).off();
               });
             });
+---
+
 
   * #### 매개변수 context
     * context는 selector가 적용하는 범위를 한정한다. 즉 여기서는 div태그 안의 h1태그와p태그 안의 내용을같이 출력할수 있다.
@@ -788,6 +790,7 @@ JQuery
             <p>paragraph</p>
             </div>
           </body>
+---
 
   * #### 이벤트 강제 발생:trigger()
     1. $(selector).trigger(eventName)
@@ -810,6 +813,7 @@ JQuery
             	<h1 id ='header'>Start</h1>
             </body>
       ![star](./img/star.png)
+---
 
   * #### 기본이벤트와 이벤트 전달
     * preventDefault(): 기본 이벤트를 제거 한다.
@@ -827,7 +831,7 @@ JQuery
           <body>
             <h1><a href ='http://www.naver.com'>naver</a></h1>
           <body>
-
+---
   * #### 이벤트 연결범위 한정(= delegate방식)
     * **일반적인 방식:** 이방식은 click 이벤트를 이용해서 h1태그를 늘리는 예제인데 문제점은 새로 append해서 추가된 h1태그는 클릭하면 아무일도 일어나지 않는 것이다. 그이유는 on()메소드는 현재 존재하는 태그에만 이벤트를 연결하기 때문이다
 
@@ -857,7 +861,7 @@ JQuery
               $('#wrap').off('click','h1');
             });
           });
-
+---
   * #### 마우스 이벤트
     * 자주 사용하는 mouseenter 만 한번써버고 넘어간다. 설명이 좀 얘매할수 있는데 mouseover과 mouseenter의 차이점이라면 mouseenter의 경우는 문서객체의 안에 있는지 외부에 있는지를 따지지만 mouseover는 마우스가 요소의 안으로 완전히 들어와야 이벤트가 발생된다.
     * 대부분 그래서 mouseenter를 많이 사용한다.
@@ -918,7 +922,7 @@ JQuery
         	 </div>
         	</div>
           </body>
-
+---
   * #### 키보드 이벤트
     * keydown: 키보드를 누룰때 발생한다.
     * keypress: 글자가 입력될때 발생한다.
@@ -960,7 +964,7 @@ JQuery
       ![basic](./img/basic.png)
       150자를 넘겼을대는 - 로증가
       ![over](./img/over.png)
-
+---
   * #### 윈도우 이벤트
     *  필요한것은 그때 마다 검색해보면 된다. 좀 실용적인 것을 해보기 위해서 **무한 스크롤** 에 대한 예제를 해봄
         <div>
@@ -1020,7 +1024,7 @@ JQuery
               $('body').append('<h2>Infinity Scroll</h1>');
             }
           });
-
+---
   * #### 입력양식 이벤트
     * 눈에만 익혀두고 이런게 있다는것만 알아두고 나중에 필요할때 검색해서 쓰면된다. 숙달되면 많이 쓰이는 것들이 눈에 들어오고 자동으로 손에 외워질 것이다.
       <div>
