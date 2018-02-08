@@ -140,27 +140,27 @@ JQuery
       많이 사용하는 것은 알아놓고 잘 생각이 안날때는 w3schools.com 에서 검색해서 그때그때마다 필요한것을 가져다쓰면 된다. 그러니 무엇이 있는지는 알고 있어야 검색할때 편할 것이다.
 
     * **위치 필터 선택자**: 말그대로 해당위치를 선택할 수 있다.
-    <table>
-      <tr>
-        <th align="center">선택자 형태</th>
-        <th align ="center"> 설명</th>
-      </tr>
-      <tr>
-        <td>요소:odd</td>
-        <td>홀수 번재에 위치한 문서객체를 선택할수 있다.</td>
-      </tr>
-      <tr>
-        <td>요소:even</td>
-        <td>짝수번째 위치한 문서객체를 선택할수 있다.</td>
-      </tr>
-      <tr>
-        <td>요소:first</td>
-        <td>첫번재에 위치한 문서객체를 선택할수 있다.</td>
-      </tr>
-      <tr>
-        <td>요소:last</td>
-        <td>마지막에 위치한 문서객체를 선택할수 있다.</td>
-      </tr>
+      <table>
+        <tr>
+          <th align="center">선택자 형태</th>
+          <th align ="center"> 설명</th>
+        </tr>
+        <tr>
+          <td>요소:odd</td>
+          <td>홀수 번재에 위치한 문서객체를 선택할수 있다.</td>
+        </tr>
+        <tr>
+          <td>요소:even</td>
+          <td>짝수번째 위치한 문서객체를 선택할수 있다.</td>
+        </tr>
+        <tr>
+          <td>요소:first</td>
+          <td>첫번재에 위치한 문서객체를 선택할수 있다.</td>
+        </tr>
+        <tr>
+          <td>요소:last</td>
+          <td>마지막에 위치한 문서객체를 선택할수 있다.</td>
+        </tr>
 
         $(document).ready(function(){
       		$('tr:odd').css('background-color','red');
