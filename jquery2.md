@@ -365,3 +365,40 @@ JQuery2
 
         </div>
         </body>
+---
+* ### 그외 여러가지 이벤트와 플러그인
+* #### 이벤트 관련 메소드 사용방법
+  * **이벤트 기본연결**
+    * $(selector).on(eventName,function(event){})
+    *  $(selector).on(object)
+  * **간단한 이벤트 연결**
+    * $(selector).method(function(event){})
+  * **강제로 이벤트 발생**
+    * $(selector).trigger(eventName)
+    * $(selector).trigger(eventName,data)
+* #### 키보드 이벤트가 발생되는 순서
+    1. 사용자가 키보드를 입력한다.
+    2. keydown 이벤트가 발생한다.
+    3. 글자가 입력된다.
+    4. keypress 이벤트가 발생한다
+    5. 사용자가 키보드에 손을땐다
+    6. keyup 이벤트가 발생한다.
+
+* **무한 스크롤 이벤트**
+  * 스크롤을 움직이면 이벤트가 발생하게 된다.
+  * 화면끝까지 스크롤이 도달했다는 것을 인식하게 하기 위해서는 window객체의 scrollTop 속성와 height 속성을 합한값이 document객체의 높이와 같아져야 한다.
+  * 이를 사용해서 스크롤이 끝가지 도달했다는 것을 알수 있음
+
+* **기본시각효과**
+  * $(selector).method();
+  * $(selector).method(speed);
+  * $(selector).method(speed,callback);
+  * $(selector).method(speed,easing,callback);
+  * callback: 효과를 모두 완료하고 실행할 함수
+  * easing: 에니메이션의 easing 형태를 지정
+
+* **사용자 정의 효과**
+  * $(selector).animate(object)
+  * $(selector).animate(object,speed)
+  * $(selector).animate(object,speed,easing)
+  * $(selector).animate(object,easing,callback)
