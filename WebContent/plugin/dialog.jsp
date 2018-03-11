@@ -21,8 +21,7 @@
 			setTimeout(function(){
 				$.colorbox.close();
 			},3000);
-		}).trigger('click
-				');
+		}).trigger('click');
 	});
 </script>
 </head>

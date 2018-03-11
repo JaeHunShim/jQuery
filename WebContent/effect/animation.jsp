@@ -61,7 +61,7 @@
 		},3000);
 	});
 	//에니메이션 정지 (stop())
-	/* $(document).ready(function(){
+	$(document).ready(function(){
 		//이벤트 연결
 		$('button').on('click',function(){
 			//변수 선언
